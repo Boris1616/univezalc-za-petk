@@ -2,6 +2,8 @@ input.onButtonPressed(Button.AB, function () {
     radio.sendString(pin)
     pin = ""
     basic.showIcon(IconNames.Chessboard)
+    basic.pause(1000)
+    basic.clearScreen()
 })
 input.onButtonPressed(Button.B, function () {
     pin = "" + pin + "0"
